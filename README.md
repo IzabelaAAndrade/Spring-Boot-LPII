@@ -1,6 +1,6 @@
 # Spring-Boot-LPII
 Trabalho prático da disciplina de Linguagem de Programação II do CEFET-MG, voltado ao uso do framework SpringBoot integrado a Java. 
-Atividade feita utilizando como referência o [curso de Spring Boot](https://www.youtube.com/watch?v=OHn1jLHGptw&list=PL8iIphQOyG-DHLpEx1TPItqJamy08fs1D) de Autoria de [Michelli Brito](https://github.com/MichelliBrito)
+Atividade feita utilizando como referência o [curso de Spring Boot](https://www.youtube.com/watch?v=OHn1jLHGptw&list=PL8iIphQOyG-DHLpEx1TPItqJamy08fs1D) de Autoria de [Michelli Brito](https://github.com/MichelliBrito).
 
 # Conexão Com BD
 A conexão com o banco de dados pode ser passar por problemas devido ao período de tempo passado após o lançamento do vídeo, logo, podem ser implementadas as soluções descritas nos comentários abaixo.  
