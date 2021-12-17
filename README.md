@@ -4,8 +4,9 @@ Atividade feita utilizando como referência o [curso de Spring Boot](https://www
 
 # Conexão Com BD
 A conexão com o banco de dados pode ser passar por problemas devido ao período de tempo passado após o lançamento do vídeo, logo, podem ser implementadas as soluções descritas nos comentários abaixo.  
-![image](https://user-images.githubusercontent.com/51242342/146487290-320f8064-62d1-4713-8199-617ec1923a27.png)
-![image](https://user-images.githubusercontent.com/51242342/146487317-38e8eed3-91be-4daa-8ea5-4cb040df61bb.png)
+![image](https://user-images.githubusercontent.com/51242342/146487290-320f8064-62d1-4713-8199-617ec1923a27.png)  
+![image](https://user-images.githubusercontent.com/51242342/146487391-0fb00692-356d-47b6-8470-a0a3bd002e1c.png)  
+
 
 ## Resultados
 Os resultados foram positivos, mostrando que a conexão ocorreu com sucesso após as modificações.  
