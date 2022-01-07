@@ -16,6 +16,10 @@ Dando continuidade ao projeto em desenvolvimento, inicialmente é feita a config
 Em sequência, é feita uma busca no banco de dados também utilizando métodos da interface que estende CrudRepository, de modo a recolher todos os eventos salvos no banco de dados e realizar sua listagem. Para tanto, cria-se na view 'index.html' a extrutura necessária para a passagem dos parâmetros dos eventos e sua exibição. Na classe "EventoController", cria-se uma função "listarEventos" a qual utilizando do método findAll() armazena um array de eventos cadastrados. Esse iterable é passado para a view mencionada usando de uma instância da classe "ModelAndView". Os resultados foram satisfatórios, atendendo às expectativas, conforme ilustrado abaixo.  
 ![image](https://user-images.githubusercontent.com/51242342/148605717-af862767-7b71-40e0-b57f-0cec9ae2ea8d.png)
 
+### Ajustes com Materialize CSS
+Como última atividade realizada neste questionário, tem-se o ajuste das páginas HTML em Templates para que as mesmas possuam um layout mais agradável. O processo é feito com o acréscimo do diretório "Materialize" no diretório "Static" em resources, tal como a adaptação dos arquivos para se ajustarem ao framework. O resultado é exibido abaixo. 
+![image](https://user-images.githubusercontent.com/51242342/148611174-5bc4c475-9480-4f74-b709-5434e0b6277c.png)
+
 
 ## Conexão Com BD - Observação Útil à prática do dia 09/12
 A conexão com o banco de dados pode ser passar por problemas devido ao período de tempo passado após o lançamento do vídeo, logo, podem ser implementadas as soluções descritas nos comentários abaixo.  
