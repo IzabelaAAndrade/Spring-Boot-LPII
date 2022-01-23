@@ -37,6 +37,11 @@ Conforme mencionado no item anterior, os eventos cadastrados no sistema devem po
 Com a tabela e os relacionamentos devidamente estruturados, é criado um formulário para o recebimento dos dados de RG e Nome dos convidados na página do evento, conforme mostrado pela figura. 
 ![image](https://user-images.githubusercontent.com/51242342/150660144-5732746a-570e-47bc-83dc-3ccd2622793d.png)
 
+### Questionário 13/01/2022
+### Inserção dos Convidados no BD
+Uma vez criado o formulário de inserção de convidados no Banco de Dados, sua inserção propriamente dita pode ser feita utilizando uma instância de uma interface que extende a classe CrudRepository, de maneira bastante similar ao que foi feito durante o cadastramento de eventos. A interface criada é a ConvidadoRepository, a qual tem a instância cr no EventoaController. Cria-se uma requisição associada ao código do evento e o convidado, passados por post. Através do código, utiliza-se a função findByCodigo para encontrar o evento desejado. Através da função setEvento(), o evento em questão é vinculado ao convidado recebido por parâmetro. Por fim, usa-se a instância cr para efetivar o salvamento no banco. O resultado é exposto em sequência. 
+![image](https://user-images.githubusercontent.com/51242342/150660705-a08ee27c-23cf-43b9-b016-0014ee0a3e03.png)
+
 
 ## Conexão Com BD - Observação Útil à prática do dia 09/12
 A conexão com o banco de dados pode ser passar por problemas devido ao período de tempo passado após o lançamento do vídeo, logo, podem ser implementadas as soluções descritas nos comentários abaixo.  
