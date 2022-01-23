@@ -20,12 +20,12 @@ Em sequência, é feita uma busca no banco de dados também utilizando métodos 
 Como última atividade realizada neste questionário, tem-se o ajuste das páginas HTML em Templates para que as mesmas possuam um layout mais agradável. O processo é feito com o acréscimo do diretório "Materialize" no diretório "Static" em resources, tal como a adaptação dos arquivos para se ajustarem ao framework. O resultado é exibido abaixo. 
 ![image](https://user-images.githubusercontent.com/51242342/148611174-5bc4c475-9480-4f74-b709-5434e0b6277c.png)
 
-### Questionário do dia 06/01/22
-###Ajustes com Materialize CSS - Contêiners
+### Questionário do dia 06/01/22  
+### Ajustes com Materialize CSS - Contêiners  
 De modo a tornar o CSS das páginas anteriormente desenvolvidas ainda mais harmônico, são utilizadas classes já prontas do Materialize CSS as quais delimitam contêiners dentro dos quais as tabelas e formulários já apresentados foram inseridos para não ficarem tão próximos às margens das páginas. O resultado é apresentado em sequência. 
 ![image](https://user-images.githubusercontent.com/51242342/150659934-7253d302-06bf-4bd5-ae7f-1e060e512e7e.png)
 
-###Criando Links Para a Página de Cada Evento
+### Criando Links Para a Página de Cada Evento
 No sistema em desenvolvimento, é importante ter acesso à página individual de cada evento, a qual conterá detalhes do mesmo, além de uma lista com os seus convidados. De modo a criar e acessar tais páginas de maneira automatizada e efetiva são feitas requisições no EventoController usando uma variável do tipo @PathVariable. Utiliza-se também de urls mvc automatizadas associadas à função implementada no Controller mencionado. O resultado é exposto nas figuras adiante. 
 ![image](https://user-images.githubusercontent.com/51242342/150660003-8fbb1b51-9fab-4ced-af07-2f7301964953.png)
 ![image](https://user-images.githubusercontent.com/51242342/150660011-31ce5cc1-8d3c-41fb-9e38-2b0649b0591d.png)
