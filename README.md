@@ -42,6 +42,11 @@ Com a tabela e os relacionamentos devidamente estruturados, é criado um formul�
 Uma vez criado o formulário de inserção de convidados no Banco de Dados, sua inserção propriamente dita pode ser feita utilizando uma instância de uma interface que extende a classe CrudRepository, de maneira bastante similar ao que foi feito durante o cadastramento de eventos. A interface criada é a ConvidadoRepository, a qual tem a instância cr no EventoaController. Cria-se uma requisição associada ao código do evento e o convidado, passados por post. Através do código, utiliza-se a função findByCodigo para encontrar o evento desejado. Através da função setEvento(), o evento em questão é vinculado ao convidado recebido por parâmetro. Por fim, usa-se a instância cr para efetivar o salvamento no banco. O resultado é exposto em sequência. 
 ![image](https://user-images.githubusercontent.com/51242342/150660705-a08ee27c-23cf-43b9-b016-0014ee0a3e03.png)
 
+### Exibição da Lista de Convidados
+Conforme descrito no item anterior, os convidados já estão sendo adicionados ao banco de dados além de associados à diferentes eventos. De modo a fazer a exibição da lista associada à cada evento, utiliza-se de uma metodologia similar àquela usada na exibição de eventos. Inicialmente, cria-se uma função denominada findByEvento na interface ConvidadoRepository, a qual recebe um evento como parâmetro e retorna uma lista iterável de convidados. A lista retornada é armazenada no EventoController e então adicionada à view através do método addObject da instância ModelAndView utilizada. A lista é então recebida no template em uso e exibida através de configurações feitas usando divs e spans. O resultado é apresentado em sequência. 
+![image](https://user-images.githubusercontent.com/51242342/150661165-5dfc67ef-a8c8-4f30-b662-d3fcfb36349c.png)
+
+
 
 ## Conexão Com BD - Observação Útil à prática do dia 09/12
 A conexão com o banco de dados pode ser passar por problemas devido ao período de tempo passado após o lançamento do vídeo, logo, podem ser implementadas as soluções descritas nos comentários abaixo.  
