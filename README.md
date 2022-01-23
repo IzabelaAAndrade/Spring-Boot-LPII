@@ -46,6 +46,14 @@ Uma vez criado o formulário de inserção de convidados no Banco de Dados, sua 
 Conforme descrito no item anterior, os convidados já estão sendo adicionados ao banco de dados além de associados à diferentes eventos. De modo a fazer a exibição da lista associada à cada evento, utiliza-se de uma metodologia similar àquela usada na exibição de eventos. Inicialmente, cria-se uma função denominada findByEvento na interface ConvidadoRepository, a qual recebe um evento como parâmetro e retorna uma lista iterável de convidados. A lista retornada é armazenada no EventoController e então adicionada à view através do método addObject da instância ModelAndView utilizada. A lista é então recebida no template em uso e exibida através de configurações feitas usando divs e spans. O resultado é apresentado em sequência. 
 ![image](https://user-images.githubusercontent.com/51242342/150661165-5dfc67ef-a8c8-4f30-b662-d3fcfb36349c.png)
 
+### Verificação dos Campos de Cadastro de Convidado e Evento
+Embora o cadastro de eventos e convidados esteja ocorrendo de maneira satisfatória, percebe-se que caso se tente cadastrar algo com um dos campos vazios, a inserção no banco de dados acontece sem problemas, algo que não deveria ser feito. De modo a corrigir tal falha, modificaremos um pouco as funções associadas aos formulários, inserindo a anotação @valid nos campos que precisam ser verificados. Ademais, nas entidades, colocaremos os campos como @NotBlanck, indicando que o dado a ser inserido não pode ser nulo e precisa ter tamanho maior do que zero. Adicionamos ainda nas funções os "BindingResults" que indicarão a existência de erros e os "ReddirectAttributes" que indicarão as mensagens de retorno. Conforme a ausência ou presença de erros, é retornada uma mensagem de sucesso ou erro à View em cheque. Os resultados são expostos abaixo.
+#### Convidados:
+![image](https://user-images.githubusercontent.com/51242342/150662598-a19e0f67-b4b1-42b8-95c2-a73db99800dd.png)
+![image](https://user-images.githubusercontent.com/51242342/150662608-81ec81b1-eb7f-4cf4-9ed5-5fc71de7cd5f.png)
+#### Eventos:
+![image](https://user-images.githubusercontent.com/51242342/150662810-dc0550cd-fd7e-4b70-9cfd-95dde309f105.png)
+![image](https://user-images.githubusercontent.com/51242342/150662832-ea2e9c0f-dbf3-40df-9630-83041f4e79b3.png)
 
 
 ## Conexão Com BD - Observação Útil à prática do dia 09/12
