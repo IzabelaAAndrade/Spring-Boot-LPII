@@ -16,15 +16,22 @@
     </head>
     <body>
         <h1>Cadastro de Eventos:</h1>
-        <form method="post">
-            <label>Nome:  <input type="text" value="" name="nome"/></label>
-            <label>Local:  <input type="text" value="" name="local"/></label>
-            <label>Data:  <input type="date" value="" name="data"/></label>
-            <label>Horário:  <input type="text" value="" name="horario"/></label>
-
-            <button type="submit">Salvar</button>
-        </form>
         <a href="/eventos" class="waves-effect waves-light btn"><i class="material-icons left">assignment</i>Visualizar Eventos Cadastrados</a>
+        <form class="container" method="post">
+            Nome:  <input type="text" value="" name="nome"/>
+            <div class="row">
+                <div class="input-field col s6">
+                    Local:  <input type="text" value="" name="local"/>
+                </div>
+                <div class="input-field col s3">
+                    Data:  <input type="date" value="" name="data"/>
+                </div>
+                <div class="input-field col s3">
+                    Horário:  <input type="text" value="" name="horario"/>
+                </div>
+            </div>
+            <button class="waves-effect waves-light btn" type="submit">Salvar</button>
+        </form>
 
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
